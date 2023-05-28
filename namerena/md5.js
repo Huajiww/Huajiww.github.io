@@ -15674,11 +15674,11 @@
 					d.a.push($.v())
 					d.a.push(T.e("[0]: 黑暗，你的杀招确实厉害，若我以相同力量硬拼，便只会在五秒内死败", u.r, t, null, null, 1, 1000, 7000))
 					d.a.push($.v())
-					d.a.push(T.e("[0]: 但是，我海虎绝不是一个能轻易杀死的人", u.r, t, null, null, 1, 1000, 7000))
+					d.a.push(T.e("[0]: 但是，我海虎便绝不是一个能轻易杀死的人", u.r, t, null, null, 1, 1000, 7000))
 					d.a.push($.v())
-					d.a.push(T.e("[0]: 现在我便要将力量迫至[绝不可能到达之境界]", u.r, t, null, null, 1, 1000, 7000))
+					d.a.push(T.e("[0]: 现在我便要将力量迫至[自毁境界]", u.r, t, null, null, 1, 1000, 7000))
 					d.a.push($.v())
-					d.a.push(T.e("[0]: 看你这春袋能否抵挡我的[自毁一击]了!", u.r, t, null, null, 1, 1000, 7000))
+					d.a.push(T.e("[0]: 看你能否抵挡这[灭神一击]了!", u.r, t, null, null, 1, 1000, 7000))
 					u.r.go += 3
                 }
                 d.a.push($.v())
@@ -15688,10 +15688,20 @@
                 d.a.push($.v())
                 d.a.push(T.e(`[0]: [${u.r.r}爆破拳]!!!!!`, u.r, t, null, null, 1, 1000, 1000))
                 d.a.push($.v())
+                if(t.$iav && t.a5) {
+					t = t.a5.x
+                }
                 s = T.u(u.r, !1, c) * 20
                 t.a0(s, !1, u.r, T.a3(), c, d)
                 d.a.push($.v())
-                if (t.a5) {
+                for (let j = 0; j < t.x.e.length; j++) {
+					if (t.f == t.x.e[j].f && t.x.e[j].fr > 0 && t.e != t.x.e[j].e) {
+						s = T.u(u.r, !1, c) * 20
+						t.x.e[j].a0(s, !1, u.r, T.a3(), c, d)
+						d.a.push($.v())
+					}
+				}
+                 /*if (t.a5) {
                     for (let j = 0; j < t.x.e.length; j++) {
                         if (((t.x.e[j].$iav && t.x.e[j].a5.x.e == t.a5.x.e || t.a5.x.e == t.x.e[j].e) || (t.x.e[j].a5 && t.x.e[j].a5.e == t.a5.e || t.a5.e == t.x.e[j].e)) && t.x.e[j].fr > 0) {
                             s = T.u(u.r, !1, c) * 20
@@ -15707,7 +15717,7 @@
                             d.a.push($.v())
                         }
                     }
-                }
+                }*/
 				u.r.E()
                 u.r.millionPower = false
                 u.r.fr += 180
