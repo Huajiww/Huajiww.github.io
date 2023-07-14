@@ -18474,41 +18474,45 @@
                     r = T.u(u, !0, c)
                     d.a.push(T.e(O.c("zkrc"), q.r, o, p, p, 0, 1000, 100))
                     o.a0(r, !0, q.r, T.a3(), c, d)
-                    if (o.fr <= o.fx * 0.65 && (c.m() & 63) <= hell.id[4].f && hell.fy > 0) {
-                        d.a.push($.v())
-                        hell.id[4].t(a, b, c, d)
-                    } else if (o.fr <= o.fx * 0.65 && (c.m() & 63) <= hell.id[3].f - 10 && hell.fy > 0) {
-                        d.a.push($.v())
-                        hell.id[3].t(a, b, c, d)
-                    } else if ((c.m() & 63) <= hell.id[1].f && hell.fy > 0) {
-                        d.a.push($.v())
-                        hell.id[1].t(a, b, c, d)
-                    } else {
-                        r = T.u(hell, !0, c)
-                        d.a.push($.v())
-                        d.a.push(T.e(O.c("zkrc"), hell, o, p, p, 0, 1000, 100))
-                        o.a0(r, !0, hell, T.a3(), c, d)
+                    if (o.fr != 0) {
+                        if (o.fr <= o.fx * 0.65 && (c.m() & 63) <= hell.id[4].f && hell.fy > 0) {
+                            d.a.push($.v())
+                            hell.id[4].t(a, b, c, d)
+                        } else if (o.fr <= o.fx * 0.65 && (c.m() & 63) <= hell.id[3].f - 10 && hell.fy > 0) {
+                            d.a.push($.v())
+                            hell.id[3].t(a, b, c, d)
+                        } else if ((c.m() & 63) <= hell.id[1].f && hell.fy > 0) {
+                            d.a.push($.v())
+                            hell.id[1].t(a, b, c, d)
+                        } else {
+                            r = T.u(hell, !0, c)
+                            d.a.push($.v())
+                            d.a.push(T.e(O.c("zkrc"), hell, o, p, p, 0, 1000, 100))
+                            o.a0(r, !0, hell, T.a3(), c, d)
+                        }
+                        return
                     }
-                    return
                 }
             }
             r = T.u(q.r, !1, c)
             d.a.push(T.e(O.c("Ukql"), q.r, o, p, p, 0, 1000, 100))
             o.a0(r, !1, q.r, T.mA(), c, d)
-            if (o.fr <= o.fx * 0.65 && (c.m() & 63) <= hell.id[4].f && hell.fy > 0) {
-                d.a.push($.v())
-                hell.id[4].t(a, b, c, d)
-            } else if (o.fr <= o.fx * 0.65 && (c.m() & 63) <= hell.id[3].f - 10 && hell.fy > 0) {
-                d.a.push($.v())
-                hell.id[3].t(a, b, c, d)
-            } else if ((c.m() & 63) <= hell.id[1].f && hell.fy > 0) {
-                d.a.push($.v())
-                hell.id[1].t(a, b, c, d)
-            } else {
-                r = T.u(hell, !0, c)
-                d.a.push($.v())
-                d.a.push(T.e(O.c("zkrc"), hell, o, p, p, 0, 1000, 100))
-                o.a0(r, !0, hell, T.a3(), c, d)
+            if (o.fr != 0) {
+                if (o.fr <= o.fx * 0.65 && (c.m() & 63) <= hell.id[4].f && hell.fy > 0) {
+                    d.a.push($.v())
+                    hell.id[4].t(a, b, c, d)
+                } else if (o.fr <= o.fx * 0.65 && (c.m() & 63) <= hell.id[3].f - 10 && hell.fy > 0) {
+                    d.a.push($.v())
+                    hell.id[3].t(a, b, c, d)
+                } else if ((c.m() & 63) <= hell.id[1].f && hell.fy > 0) {
+                    d.a.push($.v())
+                    hell.id[1].t(a, b, c, d)
+                } else {
+                    r = T.u(hell, !0, c)
+                    d.a.push($.v())
+                    d.a.push(T.e(O.c("zkrc"), hell, o, p, p, 0, 1000, 100))
+                    o.a0(r, !0, hell, T.a3(), c, d)
+                }
             }
         }
     }
