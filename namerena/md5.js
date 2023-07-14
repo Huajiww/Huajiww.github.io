@@ -15041,10 +15041,20 @@
         gaj: function() {
             return this.af.r
         },
+        gaQ: function() {
+            return H.a(["berserk", "charm"], [P.f])
+        },
         aa: function() {
             var u = new T.wargodAttack()
             u.r = this
             this.k2 = u
+        },
+        a6: function(a, b) {
+            if (C.a.w(this.gaQ(), a))
+                return b.m() < 240
+            if (C.a.w(this.gaB(), a))
+                return b.m() < 192
+            return b.m() < 84
         },
         aR: function() {
             var a
