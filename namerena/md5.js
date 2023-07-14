@@ -4704,11 +4704,11 @@
                     if (q.gR() > 0)
                         q.H(a, e)
                 }
-                if(c.level == 3) {
-					b.fy -= 80
-				} else {
-					b.fy -= 64
-				}
+                if (c.level == 3) {
+                    b.fy -= 80
+                } else {
+                    b.fy -= 64
+                }
             }
         },
         pb: function(a, b, c, d, e) {
@@ -4745,6 +4745,29 @@
                     t.y += 2048
                 u = T.e(C.c.K(O.c("lZqU"), $.ng()), a, b, null, null, 40, 1000, 100)
                 e.a.push(u)
+            }
+        },
+        heartbreak: function(a, b, c, d, e) {
+            var u, t
+            if (c > 0 && !(b.fr <= 0)) {
+                b.u[0] = parseInt(b.u[0] * 0.7)
+                b.u[1] = parseInt(b.u[1] * 0.7)
+                b.u[2] = parseInt(b.u[2] * 0.7)
+                b.u[3] = parseInt(b.u[3] * 0.7)
+                b.u[4] = parseInt(b.u[4] * 0.7)
+                b.u[5] = parseInt(b.u[5] * 0.7)
+                b.u[6] = parseInt(b.u[6] * 0.7)
+                b.u[7] = parseInt(b.u[7] * 0.7)
+                b.Q = b.u[0]
+                b.ch = b.u[1]
+                b.cx = b.u[2] + 160
+                b.cy = b.u[3]
+                b.db = b.u[4]
+                b.dx = b.u[5]
+                b.dy = b.u[6]
+                b.fx = b.u[7]
+                b.fy = -40
+                b.j = -1024
             }
         },
         pe: function(a, b, c, d, e) {
@@ -6099,6 +6122,12 @@
             _.f = 0
             _.c = _.b = _.a = _.r = null
         },
+        hellEclipseSword: function hellEclipseSword() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
         hY: function hY(a) {
             this.a = a
         },
@@ -6207,6 +6236,49 @@
             _.F = null
         },
         ig: function ig() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
+        wargod: function wargod(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.a5 = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
+        hellWargod: function hellWargod() {
             var _ = this
             _.e = !1
             _.f = 0
@@ -6349,6 +6421,18 @@
             _.f = 0
             _.c = _.b = _.a = _.r = null
         },
+        hellSword: function hellSword() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
+        wargodSweepAttack: function wargodSweepAttack() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
         tigerIceAttack: function tigerIceAttack() {
             var _ = this
             _.e = !1
@@ -6362,6 +6446,18 @@
             _.c = _.b = _.a = _.r = null
         },
         hellBehead: function hellBehead() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
+        hellHeartbreakSword: function hellHeartbreakSword() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
+        wargodCritical: function wargodCritical() {
             var _ = this
             _.e = !1
             _.f = 0
@@ -6897,6 +6993,7 @@
             _.go = 1
             _.id = e
             _.upgrade = false
+            _.wargod = null
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -7464,6 +7561,18 @@
             _.f = 0
             _.c = _.b = _.a = _.r = null
         },
+        hellAttack: function hellAttack() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
+        wargodAttack: function wargodAttack() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
         bm: function bm() {
             var _ = this
             _.e = !1
@@ -7518,6 +7627,12 @@
             _.c = _.b = _.a = _.r = null
         },
         dX: function dX() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
+        hellTaichiReflect: function hellTaichiReflect() {
             var _ = this
             _.e = !1
             _.f = 0
@@ -14278,8 +14393,8 @@
             u.go += 2
         },
         aq: function(a, b) {
-			this.Q -= 1
-			this.x.life -= 1
+            this.Q -= 1
+            this.x.life -= 1
             if (this.Q === 0)
                 this.H(a, b)
         },
@@ -14922,6 +15037,29 @@
             u[7] = C.d.v(u[7], 2)
         }
     }
+    T.wargod.prototype = {
+        gaj: function() {
+            return this.af.r
+        },
+        aa: function() {
+            var u = new T.wargodAttack()
+            u.r = this
+            this.k2 = u
+        },
+        aR: function() {
+            var a
+            this.bv()
+            this.u = this.af.r.u
+            a = new T.bU()
+            this.id.push(a)
+            a = new T.wargodCritical()
+            this.id.push(a)
+            a = new T.wargodSweepAttack()
+            this.id.push(a)
+            a = new T.dV()
+            this.id.push(a)
+        }
+    }
     T.ig.prototype = {
         ar: function(a, b) {
             if (b)
@@ -14988,6 +15126,77 @@
                 d.j = -2048
             c.r.x.aU(d)
             u.push(T.e(O.c("cPiZ"), c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
+        }
+    }
+    T.hellWargod.prototype = {
+        ar: function(a, b) {
+            if (b)
+                if (this.r.fr < 80)
+                    return !1
+            return this.aS(a, b)
+        },
+        a9: function(a, b, c) {
+            return H.a([], [T.Z])
+        },
+        t: function(a, a0, a1, a2) {
+            var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null
+            c.f = 0
+            u = a2.a
+            u.push(T.e("[0]使用[地狱战神]", c.r, b, b, b, 60, 1000, 100))
+            t = H.d(c.r.a) + "?" + H.d("wargod")
+            s = c.r
+            r = s.b
+            s = s.c
+            q = H.a([], [T.H])
+            p = H.a([], [T.y])
+            o = P.U(P.f, T.p)
+            n = new F.b([T.M])
+            n.c = n
+            n.b = n
+            m = new F.b([T.L])
+            m.c = m
+            m.b = m
+            l = new F.b([T.G])
+            l.c = l
+            l.b = l
+            k = new F.b([T.J])
+            k.c = k
+            k.b = k
+            j = new F.b([T.K])
+            j.c = j
+            j.b = j
+            i = new F.b([T.D])
+            i.c = i
+            i.b = i
+            h = new F.b([T.A])
+            h.c = h
+            h.b = h
+            g = new F.b([T.C])
+            g.c = g
+            g.b = g
+            f = new F.b([T.I])
+            f.c = f
+            f.b = f
+            e = [P.j]
+            d = new T.wargod(t,r,s,b,q,p,o,n,m,l,k,j,i,h,g,f,H.a([], e),H.a([], e),H.a([], e),H.a([], e))
+            d.Y(t, r, s, b)
+            d.a5 = new T.cj(d)
+            d.af = c
+            d.e = T.du(c.r)
+            d.r = "战神"
+            s = c.r
+            d.x = s.x
+            s.I.i(0, d.a5)
+            d.av()
+            d.j = 2048
+            c.r.x.aU(d)
+            c.r.wargod = d
+            c.r.upgrade = true
+            d.id[0].f = 78
+            d.id[1].f = 35
+            d.id[2].f = 50
+            d.id[3].f = 90
+            u.push(T.e("[1]降临", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
         }
     }
     T.cG.prototype = {
@@ -15241,8 +15450,8 @@
             var u, t, s, r, q, p, o, n = this, m = null, l = a[0].a, k = d.a
             k.push(T.e(n.r.upgrade ? "[0]使用[电动子弹]" : "[0]使用[极速子弹拳]", n.r, l, m, m, 1, 1000, 100))
             u = 4 + (c.m() & 3)
-            if(n.r.upgrade) {
-				 u = 8
+            if (n.r.upgrade) {
+                u = 8
             }
             t = 100 + n.r.cy
             for (s = !1,
@@ -15361,17 +15570,17 @@
     }
     T.tigerCheckHP.prototype = {
         ak: function(a, b, c, d, e) {
-			if(this.r.fr - a <= 180 && !this.r.upgrade) {
-				this.r.upgrade = true
-				this.r.id[2].f = 80
-				this.r.id[5].f = 20
-				this.r.id[7].f = 35
-				this.r.cx *= 2
-				this.r.cy *= 2
-				for(var j = 1; j < this.r.id.length; j++) {
-					this.r.id[j].f += 20
-				}
-			}
+            if (this.r.fr - a <= 180 && !this.r.upgrade) {
+                this.r.upgrade = true
+                this.r.id[2].f = 80
+                this.r.id[5].f = 20
+                this.r.id[7].f = 35
+                this.r.cx *= 2
+                this.r.cy *= 2
+                for (var j = 1; j < this.r.id.length; j++) {
+                    this.r.id[j].f += 20
+                }
+            }
             return a
         },
         T: function() {
@@ -15381,14 +15590,26 @@
     }
     T.hellCheckHP.prototype = {
         ak: function(a, b, c, d, e) {
-			if(this.r.fr - a <= 184 && !this.r.upgrade && !b.millionPower) {
-				this.r.upgrade = true
-				e.a.push($.v())
-				e.a.push(T.e("[0]发动[人剑合一]", this.r, null, null, null, 1, 1000, 1000))
-				e.a.push($.v())
-				e.a.push(T.e("[0]抵挡所有伤害", this.r, null, null, null, 0, 1000, 100))
-				return 0
-			}
+            if (this.r.fr - a <= 184 && !this.r.upgrade && !b.millionPower) {
+                this.r.upgrade = true
+                this.r.id[0].f = 90
+                this.r.id[1].f = 48
+                this.r.id[2].f = 138
+                this.r.id[3].f = 30
+                this.r.id[4].f = 40
+                this.r.id[5].f = 180
+                this.r.id[6].f = 0
+                this.r.id[7].f = 0
+                this.r.id[8].f = 0
+                this.r.id[9].f = 0
+                e.a.push($.v())
+                e.a.push(T.e("[0]发动[人剑合一]", this.r, null, null, null, 1, 1000, 1000))
+                e.a.push($.v())
+                e.a.push(T.e("[0]抵挡所有伤害", this.r, null, null, null, 0, 1000, 100))
+                e.a.push($.v())
+                this.r.j = 4096
+                return 0
+            }
             return a
         },
         T: function() {
@@ -15439,6 +15660,75 @@
             q = d.a
             q.push(T.e(t, s, null, null, r, 1, 1000, 100))
             p = T.u(this.r, !0, c) * 2.5 / (n.length + 0.5) * 1.1
+            for (u = 0; u < n.length; ++u) {
+                o = n[u]
+                if (o.fr > 0) {
+                    q.push($.v())
+                    o.a0(p, !0, this.r, T.mA(), c, d)
+                }
+            }
+        }
+    }
+    T.hellSword.prototype = {
+        gb3: function() {
+            return 10
+        },
+        gb4: function() {
+            return 11
+        },
+        t: function(a, b, c, d) {
+            var u, t, s, r, q, p, o, n = H.a([], [T.aU])
+            for (u = 0; u < a.length; ++u)
+                n.push(a[u].a)
+            t = "[0]使用[地狱之剑]"
+            s = this.r
+            r = H.a(n.slice(0), [H.n(n, 0)])
+            q = d.a
+            q.push(T.e(t, s, null, null, r, 1, 1000, 100))
+            p = T.u(this.r, !0, c) * 2.5 / (n.length + 0.5) * 1.2
+            for (u = 0; u < n.length; ++u) {
+                o = n[u]
+                if (o.fr > 0) {
+                    q.push($.v())
+                    o.a0(p, !0, this.r, T.mA(), c, d)
+                }
+            }
+        },
+        specAct: function(a, b, c, d) {
+            var u, t, s, r, q, p, o, n = H.a([], [T.aU])
+            n.push(a)
+            t = "[0]使用[地狱之剑]"
+            s = this.r
+            r = H.a(n.slice(0), [H.n(n, 0)])
+            q = d.a
+            q.push(T.e(t, s, null, null, r, 1, 1000, 100))
+            p = T.u(this.r, !0, c) * 2.5 / (n.length + 0.5) * 1.7
+            for (u = 0; u < n.length; ++u) {
+                o = n[u]
+                if (o.fr > 0) {
+                    q.push($.v())
+                    o.a0(p, !0, this.r, T.mA(), c, d)
+                }
+            }
+        }
+    }
+    T.wargodSweepAttack.prototype = {
+        gb3: function() {
+            return 3
+        },
+        gb4: function() {
+            return 4
+        },
+        t: function(a, b, c, d) {
+            var u, t, s, r, q, p, o, n = H.a([], [T.aU])
+            for (u = 0; u < a.length; ++u)
+                n.push(a[u].a)
+            t = "[0]使用[战神毁天拳]"
+            s = this.r
+            r = H.a(n.slice(0), [H.n(n, 0)])
+            q = d.a
+            q.push(T.e(t, s, null, null, r, 1, 1000, 100))
+            p = T.u(this.r, !0, c) * 2.5 / (n.length + 0.5)
             for (u = 0; u < n.length; ++u) {
                 o = n[u]
                 if (o.fr > 0) {
@@ -15561,6 +15851,28 @@
             }
         }
     }
+    T.hellEclipseSword.prototype = {
+        t: function(a, b, c, d) {
+            var u, t, s, r, q, p, o, n = this, m = null, l = a[0].a, k = d.a
+            k.push(T.e("[0]使用[地狱日蚀剑]", n.r, l, m, m, 1, 1000, 100))
+            u = 5 + (c.m() & 3)
+            t = 100 + n.r.cy
+            for (s = !1,
+            r = 0; r < u; ++r) {
+                q = n.r
+                if (q.fr > 0 && !q.A && l.fr > 0) {
+                    k.push($.v())
+                    t -= 10
+                    q = T.u(n.r, !0, c)
+                    p = k.length
+                    o = n.r
+                    if (l.aA(l.ak(C.e.Z(q * 0.33 / T.cc(l, !0, c)), o, T.a3(), c, d), o, T.a3(), c, d) > 0)
+                        s = !0
+                    k[p].b = 300
+                }
+            }
+        }
+    }
     T.darkFastAttack.prototype = {
         gb3: function() {
             return 5
@@ -15628,14 +15940,32 @@
             var u = this, t = a[0].a, multiple = 1.7, h
             s = T.u(u.r, !1, c)
             d.a.push(T.e("[0]使用[地狱断头]", u.r, t, null, null, 1, 1000, 100))
-            if((c.m() & 127) < 60 && t.ch + t.dx + 72 < 130) {
+            if ((c.m() & 127) < 7 || ((c.m() & 127) < 30 && (t.fr < t.fx * 0.5 || t.fr <= 200))) {
                 h = t.fr
                 t.fr = 0
-				d.a.push(T.e("[1]无法抵挡此击", u.r, T.a1(t, h), new T.aT(h), t, h + 80, 1000, 100))
-				t.bf(h, u.r, c, d)
+                d.a.push(T.e("[1]无法抵挡此击", u.r, T.a1(t, h), new T.aT(h), t, h + 80, 1000, 100))
+                t.bf(h, u.r, c, d)
             } else {
-				t.a0(s * multiple, !1, u.r, T.a3(), c, d)
+                t.a0(s * multiple, !1, u.r, T.a3(), c, d)
             }
+        }
+    }
+    T.hellHeartbreakSword.prototype = {
+        t: function(a, b, c, d) {
+            var u = this
+              , t = a[0].a
+            s = T.u(u.r, !1, c)
+            d.a.push(T.e("[0]使用[地狱穿心剑]", u.r, t, null, null, 1, 1000, 100))
+            t.a0(s * 3, !1, u.r, T.heartbreak(), c, d)
+        }
+    }
+    T.wargodCritical.prototype = {
+        t: function(a, b, c, d) {
+            var u = this
+              , t = a[0].a
+            s = T.u(u.r, !1, c)
+            d.a.push(T.e("[0]使用[战神灭世拳]", u.r, t, null, null, 1, 1000, 100))
+            t.a0(s * 1.1, !1, u.r, T.a3(), c, d)
         }
     }
     T.tigerMillionPunch.prototype = {
@@ -15655,31 +15985,31 @@
                 d.a.pop()
                 //pop "damage"
                 u.r.cx *= 10
-				u.r.cy *= 10
-				u.r.dy *= 10
-				u.r.db *= 10
-				u.r.Q *= 10
-				u.r.ch *= 10
-				u.r.cx *= 10
-                if(b.e != "dark@!" || b.e == "dark@!" && b.level < 3) {
-					d.a.push($.v())
-					d.a.push(T.e("[0]: 嘿嘿，[1]，我就一直在[等候]你这击出现呀", u.r, t.$iav ? t.a5.x : (t.a5 ? t.a5 : t), null, null, 1, 1000, 7000))
-					d.a.push($.v())
-					d.a.push(T.e("[0]: 你已踏入我的[陷阱]", u.r, t, null, null, 1, 1000, 7000))
-					d.a.push($.v())
-					d.a.push(T.e("[0]: 最强的攻击就是防守最[弱]的时候", u.r, t, null, null, 1, 1000, 7000))
-					d.a.push($.v())
-					d.a.push(T.e(`[0]: 现在，就让你知道我${u.r.r}如何[败]你吧`, u.r, t, null, null, 1, 1000, 7000))
-                } else if(b.e == "dark@!" && b.level == 3){
-					d.a.push($.v())
-					d.a.push(T.e("[0]: 黑暗，你的杀招确实厉害，若我以相同力量硬拼，便只会在五秒内死败", u.r, t, null, null, 1, 1000, 7000))
-					d.a.push($.v())
-					d.a.push(T.e("[0]: 但是，我海虎便绝不是一个能轻易杀死的人", u.r, t, null, null, 1, 1000, 7000))
-					d.a.push($.v())
-					d.a.push(T.e("[0]: 现在我便要将力量迫至[自毁境界]", u.r, t, null, null, 1, 1000, 7000))
-					d.a.push($.v())
-					d.a.push(T.e("[0]: 看你能否抵挡这[灭神一击]了!", u.r, t, null, null, 1, 1000, 7000))
-					u.r.go += 3
+                u.r.cy *= 10
+                u.r.dy *= 10
+                u.r.db *= 10
+                u.r.Q *= 10
+                u.r.ch *= 10
+                u.r.cx *= 10
+                if (b.e != "dark@!" || b.e == "dark@!" && b.level < 3) {
+                    d.a.push($.v())
+                    d.a.push(T.e("[0]: 嘿嘿，[1]，我就一直在[等候]你这击出现呀", u.r, t.$iav ? t.a5.x : (t.a5 ? t.a5 : t), null, null, 1, 1000, 7000))
+                    d.a.push($.v())
+                    d.a.push(T.e("[0]: 你已踏入我的[陷阱]", u.r, t, null, null, 1, 1000, 7000))
+                    d.a.push($.v())
+                    d.a.push(T.e("[0]: 最强的攻击就是防守最[弱]的时候", u.r, t, null, null, 1, 1000, 7000))
+                    d.a.push($.v())
+                    d.a.push(T.e(`[0]: 现在，就让你知道我${u.r.r}如何[败]你吧`, u.r, t, null, null, 1, 1000, 7000))
+                } else if (b.e == "dark@!" && b.level == 3) {
+                    d.a.push($.v())
+                    d.a.push(T.e("[0]: 黑暗，你的杀招确实厉害，若我以相同力量硬拼，便只会在五秒内死败", u.r, t, null, null, 1, 1000, 7000))
+                    d.a.push($.v())
+                    d.a.push(T.e("[0]: 但是，我海虎便绝不是一个能轻易杀死的人", u.r, t, null, null, 1, 1000, 7000))
+                    d.a.push($.v())
+                    d.a.push(T.e("[0]: 现在我便要将力量迫至[自毁境界]", u.r, t, null, null, 1, 1000, 7000))
+                    d.a.push($.v())
+                    d.a.push(T.e("[0]: 看你能否抵挡这[灭神一击]了!", u.r, t, null, null, 1, 1000, 7000))
+                    u.r.go += 3
                 }
                 d.a.push($.v())
                 d.a.push(T.e("[0]: 他妈的磁场转动——", u.r, t, null, null, 1, 1000, 7000))
@@ -15688,20 +16018,20 @@
                 d.a.push($.v())
                 d.a.push(T.e(`[0]: [${u.r.r}爆破拳]!!!!!`, u.r, t, null, null, 1, 1000, 1000))
                 d.a.push($.v())
-                if(t.$iav && t.a5) {
-					t = t.a5.x
+                if (t.$iav && t.a5) {
+                    t = t.a5.x
                 }
                 s = T.u(u.r, !1, c) * 20
                 t.a0(s, !1, u.r, T.a3(), c, d)
                 d.a.push($.v())
                 for (let j = 0; j < t.x.e.length; j++) {
-					if (t.f == t.x.e[j].f && t.x.e[j].fr > 0 && t.e != t.x.e[j].e) {
-						s = T.u(u.r, !1, c) * 20
-						t.x.e[j].a0(s, !1, u.r, T.a3(), c, d)
-						d.a.push($.v())
-					}
-				}
-                 /*if (t.a5) {
+                    if (t.f == t.x.e[j].f && t.x.e[j].fr > 0 && t.e != t.x.e[j].e) {
+                        s = T.u(u.r, !1, c) * 20
+                        t.x.e[j].a0(s, !1, u.r, T.a3(), c, d)
+                        d.a.push($.v())
+                    }
+                }
+                /*if (t.a5) {
                     for (let j = 0; j < t.x.e.length; j++) {
                         if (((t.x.e[j].$iav && t.x.e[j].a5.x.e == t.a5.x.e || t.a5.x.e == t.x.e[j].e) || (t.x.e[j].a5 && t.x.e[j].a5.e == t.a5.e || t.a5.e == t.x.e[j].e)) && t.x.e[j].fr > 0) {
                             s = T.u(u.r, !1, c) * 20
@@ -15718,7 +16048,7 @@
                         }
                     }
                 }*/
-				u.r.E()
+                u.r.E()
                 u.r.millionPower = false
                 u.r.fr += 180
                 d.a.push(T.e("[1]回复体力[2]点", u.r, T.a1(u.r, 0), new T.aG(u.r.fr), null, 0, 1000, 100))
@@ -16332,10 +16662,25 @@
             return H.a(["berserk", "charm"], [P.f])
         },
         aa: function() {
-            var u, t = new T.aK()
+            var u, t = new T.hellAttack()
             t.r = this
             this.k2 = t
             t = this.id
+            u = new T.hellWargod()
+            u.f = 0
+            t.push(u)
+            u = new T.hellSword()
+            u.f = 0
+            t.push(u)
+            u = new T.hellTaichiReflect()
+            u.f = 0
+            t.push(u)
+            u = new T.hellHeartbreakSword()
+            u.f = 0
+            t.push(u)
+            u = new T.hellEclipseSword()
+            u.f = 0
+            t.push(u)
             u = new T.hellDefend()
             u.f = 90
             t.push(u)
@@ -18059,14 +18404,122 @@
             o.a0(r, !1, q.r, T.mA(), c, d)
         }
     }
+    T.hellAttack.prototype = {
+        t: function(a, b, c, d) {
+            var u, t, s, r, q = this, p = null, o = a[0].a, index
+            if (b) {
+                u = q.r
+                u = u.db > u.Q
+            } else
+                u = !1
+            if (u) {
+                u = q.r
+                t = C.b.ao(u.db - u.Q, 2)
+                s = u.fy
+                if (s >= t) {
+                    u.fy = s - t
+                    r = T.u(u, !0, c)
+                    d.a.push(T.e(O.c("zkrc"), q.r, o, p, p, 0, 1000, 100))
+                    o.a0(r, !0, q.r, T.a3(), c, d)
+                    if (o.fr != 0 && q.r.wargod != null) {
+                        if (o.fr <= o.fx * 0.65 && (c.m() & 63) < q.r.wargod.id[1].f && q.r.wargod.fy > 0) {
+                            d.a.push($.v())
+                            q.r.wargod.id[1].t(a, b, c, d)
+                        } else if ((c.m() & 63) < q.r.wargod.id[1].f && q.r.wargod.fy > 0) {
+                            d.a.push($.v())
+                            q.r.wargod.id[2].t(a, b, c, d)
+                        } else {
+                            r = T.u(q.r.wargod, !0, c)
+                            d.a.push($.v())
+                            d.a.push(T.e(O.c("zkrc"), q.r.wargod, o, p, p, 0, 1000, 100))
+                            o.a0(r, !0, q.r.wargod, T.a3(), c, d)
+                        }
+                    }
+                    return
+                }
+            }
+            r = T.u(q.r, !1, c)
+            d.a.push(T.e(O.c("Ukql"), q.r, o, p, p, 0, 1000, 100))
+            o.a0(r, !1, q.r, T.mA(), c, d)
+            if (o.fr != 0 && q.r.wargod != null) {
+                if (o.fr <= o.fx * 0.65 && (c.m() & 63) < q.r.wargod.id[1].f && q.r.wargod.fy > 0) {
+                    d.a.push($.v())
+                    q.r.wargod.id[1].t(a, b, c, d)
+                } else if ((c.m() & 63) < q.r.wargod.id[1].f && q.r.wargod.fy > 0) {
+                    d.a.push($.v())
+                    q.r.wargod.id[2].t(a, b, c, d)
+                } else {
+                    r = T.u(q.r.wargod, !0, c)
+                    d.a.push($.v())
+                    d.a.push(T.e(O.c("zkrc"), q.r.wargod, o, p, p, 0, 1000, 100))
+                    o.a0(r, !0, q.r.wargod, T.a3(), c, d)
+                }
+            }
+        }
+    }
+    T.wargodAttack.prototype = {
+        t: function(a, b, c, d) {
+            var u, t, s, r, q = this, p = null, o = a[0].a, hell = q.r.af.r
+            if (b) {
+                u = q.r
+                u = u.db > u.Q
+            } else
+                u = !1
+            if (u) {
+                u = q.r
+                t = C.b.ao(u.db - u.Q, 2)
+                s = u.fy
+                if (s >= t) {
+                    u.fy = s - t
+                    r = T.u(u, !0, c)
+                    d.a.push(T.e(O.c("zkrc"), q.r, o, p, p, 0, 1000, 100))
+                    o.a0(r, !0, q.r, T.a3(), c, d)
+                    if (o.fr <= o.fx * 0.65 && (c.m() & 63) <= hell.id[4].f && hell.fy > 0) {
+                        d.a.push($.v())
+                        hell.id[4].t(a, b, c, d)
+                    } else if (o.fr <= o.fx * 0.65 && (c.m() & 63) <= hell.id[3].f - 10 && hell.fy > 0) {
+                        d.a.push($.v())
+                        hell.id[3].t(a, b, c, d)
+                    } else if ((c.m() & 63) <= hell.id[1].f && hell.fy > 0) {
+                        d.a.push($.v())
+                        hell.id[1].t(a, b, c, d)
+                    } else {
+                        r = T.u(hell, !0, c)
+                        d.a.push($.v())
+                        d.a.push(T.e(O.c("zkrc"), hell, o, p, p, 0, 1000, 100))
+                        o.a0(r, !0, hell, T.a3(), c, d)
+                    }
+                    return
+                }
+            }
+            r = T.u(q.r, !1, c)
+            d.a.push(T.e(O.c("Ukql"), q.r, o, p, p, 0, 1000, 100))
+            o.a0(r, !1, q.r, T.mA(), c, d)
+            if (o.fr <= o.fx * 0.65 && (c.m() & 63) <= hell.id[4].f && hell.fy > 0) {
+                d.a.push($.v())
+                hell.id[4].t(a, b, c, d)
+            } else if (o.fr <= o.fx * 0.65 && (c.m() & 63) <= hell.id[3].f - 10 && hell.fy > 0) {
+                d.a.push($.v())
+                hell.id[3].t(a, b, c, d)
+            } else if ((c.m() & 63) <= hell.id[1].f && hell.fy > 0) {
+                d.a.push($.v())
+                hell.id[1].t(a, b, c, d)
+            } else {
+                r = T.u(hell, !0, c)
+                d.a.push($.v())
+                d.a.push(T.e(O.c("zkrc"), hell, o, p, p, 0, 1000, 100))
+                o.a0(r, !0, hell, T.a3(), c, d)
+            }
+        }
+    }
     T.tigerAttack.prototype = {
         t: function(a, b, c, d) {
             var u, t, s, r, q = this, p = null, o = a[0].a
-            if(q.r.fr <= 180 && !q.r.upgrade) {
-				q.r.upgrade = true
-				q.r.id[1].f = 60
-				q.r.id[4].f = 25
-				q.r.id[6].f = 30
+            if (q.r.fr <= 180 && !q.r.upgrade) {
+                q.r.upgrade = true
+                q.r.id[1].f = 60
+                q.r.id[4].f = 25
+                q.r.id[6].f = 30
             }
             if (b) {
                 u = q.r
@@ -18192,7 +18645,13 @@
         ak: function(a, b, c, d, e) {
             if (d.m() < this.f && this.r.bq(d)) {
                 e.a.push(T.e(O.c("zGKr"), this.r, b, null, null, 40, 1000, 100))
-                return C.b.v(a, 3)
+                if (this.r.wargod != null) {
+                    this.r.wargod.j = 2048
+                }
+                return C.b.v(a, 6)
+            }
+            if (this.r.wargod != null) {
+                this.r.wargod.j = 2048
             }
             return a
         },
@@ -18426,6 +18885,45 @@
                 c.a0(u, !0, s.r, e, f, g)
                 t = s.r
                 t.j = t.j - 480
+                return 0
+            }
+            return a
+        },
+        T: function() {
+            this.r.x2.i(0, this)
+        },
+        $iK: 1
+    }
+    T.hellTaichiReflect.prototype = {
+        dk: function(a, b, c, d, e, f, g) {
+            var u, t, s = this, fname = [], index = 0, h, j
+            if (c.fr <= 0)
+                return a
+            if (f.m() < s.f && f.m() < 128 && s.r.bq(f) && !c.millionPower) {
+                for (var i = 0; i < c.x.f.length; i++) {
+                    if (c.x.f[i].f != c.f || c.x.f.length == 1) {
+                        fname.push(c.x.f[i].f)
+                    }
+                }
+                index = f.au(fname.length - 1)
+                for (var i = 0; i < c.x.f.length; i++) {
+                    if (c.x.f[i].f == fname[index]) {
+                        h = c.x.f[i]
+                        break
+                    }
+                }
+                u = Math.ceil(a * 0.7)
+                j = a - u
+                g.a.push(T.e(C.c.K("[0]使用[太极地狱拳]", $.nj()), s.r, c, null, null, 20, 1500, 100))
+                if (fname.length == 1) {
+                    g.a.push($.v())
+                    h.a0(a, !0, s.r, e, f, g)
+                } else {
+                    g.a.push($.v())
+                    h.a0(u, !0, s.r, e, f, g)
+                    g.a.push($.v())
+                    c.a0(j, !0, s.r, e, f, g)
+                }
                 return 0
             }
             return a
@@ -19418,6 +19916,7 @@
         r(T, "darkLock_1", 5, null, ["$5"], ["darkLockAttack"], 0, 0)
         r(T, "mC", 5, null, ["$5"], ["pb"], 0, 0)
         r(T, "kV", 5, null, ["$5"], ["pc"], 0, 0)
+        r(T, "heartbreak", 5, null, ["$5"], ["heartbreak"], 0, 0)
         r(T, "qc", 5, null, ["$5"], ["pe"], 0, 0)
         r(T, "q9", 5, null, ["$5"], ["p8"], 0, 0)
         r(T, "qb", 5, null, ["$5"], ["pd"], 0, 0)
@@ -19501,14 +20000,14 @@
         t(P.cD, P.l)
         t(Z.hl, Z.ax)
         s(F.ab, [T.H, T.M, T.D, T.J, T.L, T.K, T.A, T.G, T.C, T.I])
-        s(T.H, [T.y, T.hJ, T.hR, T.i0, T.i3, T.dU, T.dZ, T.bU, T.dQ, T.hZ, T.i5, T.dV, T.dX, T.i9, T.ih, T.im, T.io, T.tigerMillionPunch, T.darkRevive, T.hellDefend])
-        s(T.y, [T.dL, T.hI, T.hK, T.bx, T.hL, T.hM, T.dN, T.dO, T.dP, T.hS, T.hU, T.hV, T.bV, T.dR, T.hX, T.dS, T.dT, T.i1, T.i6, T.i8, T.dW, T.ia, T.i7, T.ig, T.ij, T.hW, T.ik, T.il, T.dM, T.hO, T.dc, T.hQ, T.i_, T.bI, T.i2, T.i4, T.ie, T.aK, T.bm, T.bn, T.hT, T.dY, T.ic, T.tigerAttack, T.tigerCheckHP, T.tigerIceAttack, T.tigerBlastPunch, T.tigerBlade, T.tigerRecover, T.tigerFastPunch, T.tigerWindAttack, T.tigerBlastKick, T.darkRecover, T.darkFastAttack, T.darkIron, T.darkHaste, T.darkLock, T.darkDemonSword, T.darkAttack, T.hellFireAttack, T.hellWindAttack, T.hellCutter, T.hellBehead, T.hellCheckHP])
+        s(T.H, [T.y, T.hJ, T.hR, T.i0, T.i3, T.dU, T.dZ, T.bU, T.dQ, T.hZ, T.i5, T.dV, T.dX, T.i9, T.ih, T.im, T.io, T.tigerMillionPunch, T.darkRevive, T.hellDefend, T.hellTaichiReflect])
+        s(T.y, [T.dL, T.hI, T.hK, T.bx, T.hL, T.hM, T.dN, T.dO, T.dP, T.hS, T.hU, T.hV, T.bV, T.dR, T.hX, T.dS, T.dT, T.i1, T.i6, T.i8, T.dW, T.ia, T.i7, T.ig, T.ij, T.hW, T.ik, T.il, T.dM, T.hO, T.dc, T.hQ, T.i_, T.bI, T.i2, T.i4, T.ie, T.aK, T.bm, T.bn, T.hT, T.dY, T.ic, T.tigerAttack, T.tigerCheckHP, T.tigerIceAttack, T.tigerBlastPunch, T.tigerBlade, T.tigerRecover, T.tigerFastPunch, T.tigerWindAttack, T.tigerBlastKick, T.darkRecover, T.darkFastAttack, T.darkIron, T.darkHaste, T.darkLock, T.darkDemonSword, T.darkAttack, T.hellFireAttack, T.hellWindAttack, T.hellCutter, T.hellBehead, T.hellCheckHP, T.hellWargod, T.hellAttack, T.hellSword, T.hellHeartbreakSword, T.hellEclipseSword, T.wargodSweepAttack, T.wargodCritical, T.wargodAttack])
         s(T.M, [T.bf, T.co, T.dj, T.cG, T.aN, T.hz, T.darkHasteRun, T.darkSuperUpgrade])
         s(T.p, [T.dt, T.aQ, T.ii, T.h0, T.iT])
         s(T.w, [T.dC, T.av, T.cA, T.hc, T.hj, T.hk, T.he, T.cy])
         s(T.D, [T.cg, T.dF, T.el])
         s(T.J, [T.dE, T.ay])
-        s(T.av, [T.hh, T.hi, T.ho])
+        s(T.av, [T.hh, T.hi, T.ho, T.wargod])
         s(T.cA, [T.eY, T.eZ, T.f_, T.f0, T.d7, T.d8, T.f1, T.f2, T.bA, T.f4, T.f6, T.tigershark, T.dark, T.hell, T.yuri2])
         t(T.hg, T.cy)
         t(T.f3, T.bA)
