@@ -5115,6 +5115,44 @@
                     g.at(a, u)
                     return g
                 }
+                if (a == "ironbird") {
+                    t = H.d(a) + H.d($.ah())
+                    s = H.a([], [T.H])
+                    r = H.a([], [T.y])
+                    q = P.U(P.f, T.p)
+                    p = new F.b([T.M])
+                    p.c = p
+                    p.b = p
+                    o = new F.b([T.L])
+                    o.c = o
+                    o.b = o
+                    n = new F.b([T.G])
+                    n.c = n
+                    n.b = n
+                    m = new F.b([T.J])
+                    m.c = m
+                    m.b = m
+                    l = new F.b([T.K])
+                    l.c = l
+                    l.b = l
+                    k = new F.b([T.D])
+                    k.c = k
+                    k.b = k
+                    j = new F.b([T.A])
+                    j.c = j
+                    j.b = j
+                    i = new F.b([T.C])
+                    i.c = i
+                    i.b = i
+                    h = new F.b([T.I])
+                    h.c = h
+                    h.b = h
+                    g = [P.j]
+                    g = new T.ironbird(a,u,t,f,s,r,q,p,o,n,m,l,k,j,i,h,H.a([], g),H.a([], g),H.a([], g),H.a([], g))
+                    g.Y(a, u, t, f)
+                    g.at(a, u)
+                    return g
+                }
                 if (a == $.kk()) {
                     t = H.d(a) + H.d($.ah())
                     s = H.a([], [T.H])
@@ -6056,6 +6094,12 @@
             _.f = 0
             _.c = _.b = _.a = _.r = null
         },
+        ironbirdSimulate: function ironbirdSimulate() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
         dR: function dR() {
             var _ = this
             _.e = !1
@@ -6086,6 +6130,14 @@
             _.Q = 7
             _.c = _.b = _.a = null
         },
+        ironbirdSimulateRun: function ironbirdSimulateRun(a) {
+            var _ = this
+            _.x = a
+            _.y = null
+            _.z = 3
+            _.Q = 3
+            _.c = _.b = _.a = null
+        },
         hX: function hX() {
             var _ = this
             _.e = !1
@@ -6111,6 +6163,12 @@
             _.c = _.b = _.a = _.r = null
         },
         darkRecover: function darkRecover() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
+        ironbirdRepair: function ironbirdRepair() {
             var _ = this
             _.e = !1
             _.f = 0
@@ -6153,6 +6211,14 @@
             _.c = _.b = _.a = _.r = null
         },
         darkIron: function darkIron() {
+            var _ = this
+            _.fy = _.fx = _.fr = null
+            _.id = _.go = 0
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
+        ironbirdForceShield: function ironbirdForceShield() {
             var _ = this
             _.fy = _.fx = _.fr = null
             _.id = _.go = 0
@@ -6409,6 +6475,18 @@
             _.f = 0
             _.c = _.b = _.a = _.r = null
         },
+        ironbirdCheckHP: function ironbirdCheckHP() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
+        robotForceShield: function robotForceShield() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
         dM: function dM() {
             var _ = this
             _.e = !1
@@ -6463,7 +6541,19 @@
             _.f = 0
             _.c = _.b = _.a = _.r = null
         },
+        ironbirdUpgrade: function ironbirdUpgrade() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
         tigerBlade: function tigerBlade() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
+        ironbirdLaser: function ironbirdLaser() {
             var _ = this
             _.e = !1
             _.f = 0
@@ -7033,6 +7123,49 @@
             _.go = 1
             _.id = e
             _.upgrade = false
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
+        ironbird: function ironbird(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.aI = 0
+            _.aP = _.bb = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+            _.upgrade = false
+            _.shield = 1000
+            _.simulated = []
+            _.shieldholding = false
+            _.allupgraded = false
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -14083,6 +14216,9 @@
             if (s != null)
                 s.f = q.f
             s = d.a
+            if (q.r.f == "ironbird@!") {
+                r.r = q.r.r
+            }
             s.push(T.e(O.c("EIcZ"), T.lV(q.r), q.r, p, p, 60, 1000, 100))
             q.r.x.aU(r)
             s.push(T.e(O.c("Jggp"), q.r, T.a1(r, r.fr), p, p, 0, 1000, 100))
@@ -14290,6 +14426,19 @@
             s.a0(u * 1.25 * (1.5 + t), !0, this.r, T.mC(), c, d)
         }
     }
+    T.ironbirdSimulate.prototype = {
+        t: function(a, b, c, d) {
+            var u, t, s = a[0].a, r = H.o(this.r.r1.h(0, "ironbirdsimulate"), "$iironbirdSimulateRun")
+            t = new T.ironbirdSimulateRun(this.r)
+            t.y = new T.ay(t)
+            this.r.r1.k(0, "ironbirdsimulate", t)
+            this.r.r2.i(0, t)
+            this.r.x1.i(0, t.y)
+            this.r.E()
+            d.a.push(T.e("[0]正在执行[模拟程式]", this.r, this.r, null, null, 1, 1000, 100))
+            this.r.id[1].f = 0
+        }
+    }
     T.dR.prototype = {
         am: function(a, b) {
             if (b)
@@ -14383,6 +14532,147 @@
         },
         $ip: 1
     }
+    T.ironbirdSimulateRun.prototype = {
+        gR: function() {
+            return 1
+        },
+        al: function(a) {
+            return
+        },
+        aq: function(a, b) {
+            if (--this.Q === 0)
+                this.H(null, b)
+        },
+        H: function(a, b) {
+            var u, t
+            this.C()
+            u = this.x
+            u.r1.S(0, "ironbirdsimulate")
+            this.y.C()
+            u.E()
+            if (u.fr > 0) {
+                t = b.a
+                t.push($.v())
+                t.push(T.ap("[1]模拟成功", a, u))
+                this.act(null, null, u, b)
+            }
+        },
+        act: function(a, b, c, d) {
+            var u, t, s, r, q = c, p = null, arr = [], siA, siB, type, obj1, obj2 = {
+                "id": []
+            }
+            for (var i = 0; i < q.x.a.a.length; i++) {
+                for (var o = 0; o < q.x.a.a[i].c.length; o++) {
+                    if (q.x.a.a[i].c[o].e != q.e) {
+                        arr.push({
+                            "index1": i,
+                            "index2": o,
+                            "attr": q.x.a.a[i].c[o].V
+                        })
+                    }
+                }
+            }
+            arr.sort((a,b)=>b.attr - a.attr)
+            if (arr.length > 4) {
+                arr = arr.slice(0, 4)
+            }
+            for (var o = 0; o < arr.length; o++) {
+                obj2 = {
+                    "id": []
+                }
+                r = T.m_(q)
+                r.x = q.x
+                r.av()
+                for (u = 0; u < 7; u++) {
+                    r.u[u] = q.u[u] - 19
+                }
+                r.u[7] = 330
+                r.cd()
+                r.E()
+                r.fr = r.fx
+                s = q
+                selected = arr[o]
+                siA = selected.index1
+                siB = selected.index2
+                if (q.x.a.a[siA].c[siB].id.length >= 40) {
+                    r.k3.splice(0, r.k3.length)
+                    r.k1.splice(0, r.k1.length)
+                    r.I.ae(0)
+                    //初始化“死亡时发动”类技能
+                    r.N.ae(0)
+                    for (var i = 0; i < 40; i++) {
+                        r.id[i].f = q.x.a.a[siA].c[siB].id[i].f
+                        r.id[i].T()
+                    }
+                    r.k1 = r.U.dz(r.id, T.H)
+                    for (var i = 0; i < 40; i++) {
+                        if (r.k1[i].f > 0 && r.k1[i]instanceof T.y) {
+                            r.k3.push(r.k1[i])
+                        }
+                    }
+                    r.id.push(new T.robotForceShield())
+                    r.id[r.id.length - 1].r = r
+                    r.id[r.id.length - 1].T()
+                    r.k1.push(r.id[r.id.length - 1])
+                } else {
+                    r.id.splice(0, r.id.length)
+                    r.k3.splice(0, r.k3.length)
+                    r.k1.splice(0, r.k1.length)
+                    obj1 = T[q.x.a.a[siA].c[siB].constructor.name].prototype.aa
+                    //obj2.fun = obj1
+                    //obj2.fun()
+                    r.fun = obj1
+                    r.fun()
+                    //r.id = obj2.id
+                    //r.k2 = obj2.k2
+                    r.k2.r = r
+                    if (r.k2.fr) {
+                        r.k2.fr = r
+                    }
+                    r.I.ae(0)
+                    r.N.ae(0)
+                    for (var i = 0; i < q.x.a.a[siA].c[siB].id.length; i++) {
+                        r.id[i].r = r
+                        r.id[i].T()
+                    }
+                    r.k1 = r.U.dz(r.id, T.H)
+                    for (var i = 0; i < r.k1.length; i++) {
+                        if (r.k1[i].f > 0 && r.k1[i]instanceof T.y) {
+                            r.k3.push(r.k1[i])
+                        }
+                    }
+                    r.id.push(new T.robotForceShield())
+                    r.id[r.id.length - 1].r = r
+                    r.id[r.id.length - 1].T()
+                    r.k1.push(r.id[r.id.length - 1])
+                }
+                for (var i in q.x.a.a[siA].c[siB]) {
+                    if (r[i] == null) {
+                        type = typeof q.x.a.a[siA].c[siB][i]
+                        if (type != "function") {
+                            if (type != "object") {
+                                r[i] = q.x.a.a[siA].c[siB][i]
+                            } else {
+                                r[i] = null
+                            }
+                        }
+                    }
+                }
+                r.r = q.x.a.a[siA].c[siB].r
+                s = d.a
+                s.push($.v())
+                q.x.aU(r)
+                q.id[1].f = 0
+                q.id[4].f = 40
+                q.id[5].f = 70
+                q.simulated.push(r)
+                r.owner = q
+                r.maxlevel = false
+                s.push(T.e("[0]: [1]已被完全模拟", q, T.a1(r, r.fr), p, p, 0, 1000, 100))
+            }
+        },
+        $ip: 1
+    }
     T.darkSuperUpgrade.prototype = {
         gR: function() {
             return 1
@@ -14419,7 +14709,7 @@
                 t.push($.v())
                 t.push(T.ap("[1]的[修罗轮回]结束", null, u))
                 t.push(T.e("[1]生命力[耗尽]", u, T.a1(u, s), new T.aT(s), u, s + 80, 1000, 100))
-                u.bf(s, u, a, b)
+                u.bf(s, null, u.x.a.b, b)
             }
         },
         $ip: 1
@@ -14619,6 +14909,75 @@
             u.fr = r + t
             p.push(T.e(O.c("YmSv"), q.r, T.a1(u, r), new T.aG(t), null, 0, 1000, 100))
             u.bI(q.r, d)
+        }
+    }
+    T.ironbirdRepair.prototype = {
+        b5: function(a) {
+            return a.b1(this.r.simulated)
+        },
+        am: function(a, b) {
+            if (b)
+                return a.fr + 80 < a.fx
+            return a.fr < a.fx
+        },
+        a8: function(a, b, c) {
+            var u = {}
+            if (b) {
+                u.a = a.fx - a.fr
+                a.r1.ap(0, new T.hY(u))
+                return u.a = u.a * a.L
+            }
+            return c.gbh()
+        },
+        t: function(a, b, c, d) {
+            var u, t, s, r, q = this, p = q.f
+            d.a.push(T.e("[0]使用[修复]", q.r, u, null, null, t, 1000, 100))
+            for (var i = 0; i < q.r.simulated.length; i++) {
+                if (q.r.simulated[i].fr > 0) {
+                    u = q.r.simulated[i]
+                    t = C.e.Z(T.u(q.r, !0, c) / 60 * 1.2)
+                    s = u.fx - u.fr
+                    if (t > s)
+                        t = s
+                    p = d.a
+                    p.push($.v())
+                    r = u.fr
+                    u.fr = r + t
+                    p.push(T.e(O.c("YmSv"), q.r, T.a1(u, r), new T.aG(t), null, 0, 1000, 100))
+                    u.bI(q.r, d)
+                } else {
+					u = q.r.simulated[i]
+					this.act(u, b, c, d)
+                }
+            }
+        },
+        act: function(a, b, c, d) {
+            var u, t, s, r, q, p, o, n = this, m = null
+            u = a
+            t = C.e.Z(T.u(n.r, !0, c) / 75) + 70
+            s = u.fx
+            if (t > s)
+                t = s
+            r = d.a
+            d.a.push($.v())
+            r.push(T.e(C.c.K("[1]被[重新启动]", $.lb()), n.r, u, m, m, t + 60, 1000, 100))
+            u.fr = t
+            q = u.x
+            if (!C.a.w(q.f, u)) {
+                p = q.a
+                if (!C.a.w(p.c, u))
+                    C.a.i(p.c, u)
+                p = p.e
+                if (!C.a.w(p, u)) {
+                    o = q.f
+                    if (o.length > 0)
+                        C.a.ck(p, C.a.aJ(p, C.a.gbe(o)) + 1, u)
+                    else
+                        p.push(u)
+                }
+                C.a.i(q.f, u)
+            }
+            r.push(T.e(O.c("YmSv"), n.r, T.a1(u, 0), new T.aG(t), m, 0, 1000, 100))
         }
     }
     T.hY.prototype = {
@@ -14838,6 +15197,97 @@
             } else {
                 u.push($.v())
                 t = "[1]从[修罗不死身]解除"
+                s = r.r
+                u.push(T.ap(t, s, s))
+            }
+            r.go = r.id = 0
+        },
+        $ip: 1
+    }
+    T.ironbirdForceShield.prototype = {
+        ga1: function() {
+            return 4000
+        },
+        ar: function(a, b) {
+            if (this.fr.a != null)
+                return !1
+            return this.aS(a, b)
+        },
+        a9: function(a, b, c) {
+            return H.a([], [T.Z])
+        },
+        t: function(a, b, c, d) {
+            var u = this
+              , t = null
+              , s = "[0]使用[力场护盾]"
+              , r = u.r
+              , q = d.a
+            r.shield += 100
+            q.push(T.e(s, r, r, t, t, 60, 1000, 100))
+            u.r.y1.i(0, u.fr)
+            u.r.x1.i(0, u.fx)
+            u.r.r2.i(0, u.fy)
+            u.r.r1.k(0, "ironbirdforceshield", u)
+            u.r.E()
+            u.id = 3
+            r = u.r
+            u.go = 10000 + u.r.db * 4
+            s = u.r
+            s = C.c.K("[0]一段时间内无敌", $.nh())
+            r = u.r
+            q.push($.v())
+            q.push(T.e(s, r, r, t, t, 0, 1000, 100))
+            for (var i = 0; i < u.r.simulated.length; i++) {
+                if (u.r.simulated[i].fr != 0) {
+                    q.push($.v())
+                    q.push(T.e(s, u.r.simulated[i], u.r.simulated[i], t, t, 0, 1000, 100))
+                }
+            }
+            u.r.shieldholding = true
+        },
+        ak: function(a, b, c, d, e) {
+            var u
+            if (a > 0) {
+                u = b.millionPower ? 0 : this.go
+                if (a <= u) {
+                    this.go = u - 0
+                    a = 0
+                } else {
+                    a -= u
+                    this.H(b, e)
+                }
+                return a
+            }
+            return 0
+        },
+        aq: function(a, b) {
+            var u
+            if (--this.id === 0) {
+                this.H(null, b)
+                u = this.r
+            }
+        },
+        al: function(a) {
+            this.r.J *= 1.12
+        },
+        gR: function() {
+            return this.id
+        },
+        H: function(a, b) {
+            var u, t, s, r = this
+            r.fr.C()
+            r.fx.C()
+            r.fy.C()
+            r.r.r1.S(0, $.l2())
+            r.r.E()
+            u = b.a
+            r.r.shieldholding = false
+            if (a != null) {
+                u.push($.v())
+                u.push(T.ap("[1]的[力场护盾]被击破", a, r.r))
+            } else {
+                u.push($.v())
+                t = "[1]的[力场护盾]结束运行"
                 s = r.r
                 u.push(T.ap(t, s, s))
             }
@@ -15637,6 +16087,33 @@
         },
         $iD: 1
     }
+    T.ironbirdCheckHP.prototype = {
+        ak: function(a, b, c, d, e) {
+            if (this.r.shield <= 0) {
+                this.r.shield = 0
+                return -(this.r.shield - a)
+            } else {
+                this.r.shield -= a
+                return 0
+            }
+        },
+        T: function() {
+            this.r.y1.i(0, this)
+        },
+        $iD: 1
+    }
+    T.robotForceShield.prototype = {
+        ak: function(a, b, c, d, e) {
+            if (this.r.owner.shieldholding != true) {
+                return a
+            }
+            return 0
+        },
+        T: function() {
+            this.r.y1.i(0, this)
+        },
+        $iD: 1
+    }
     T.dM.prototype = {
         gb3: function() {
             return 5
@@ -15819,6 +16296,52 @@
             }
         }
     }
+    T.ironbirdLaser.prototype = {
+        gb3: function() {
+            return 5
+        },
+        gb4: function() {
+            return 6
+        },
+        t: function(a, b, c, d) {
+            var u, t, s, r, q, p, o, n = H.a([], [T.aU]), m, l, k, v
+            for (u = 0; u < a.length; ++u)
+                n.push(a[u].a)
+            t = "[0]使用[镭射炮]"
+            m = null
+            l = a[0].a
+            k = d.a
+            v = n
+            n = this
+            k.push(T.e(t, n.r, l, m, m, 1, 1000, 100))
+            for (var j = 0; j < v.length; j++) {
+                l = v[j]
+                u = 2
+                t = 100 + n.r.cy
+                for (s = !1,
+                r = 0; r < u; ++r) {
+                    q = n.r
+                    if (q.fr > 0 && !q.A && l.fr > 0) {
+                        k.push($.v())
+                        if (l.fr > 0 && !l.A && T.bd(t, l.dx + l.cy, c)) {
+                            if (s)
+                                k.push(T.e(O.c("SYdr"), l, n.r, m, m, 0, 1000, 100))
+                            else
+                                k.push(T.e(O.c("vVob"), l, n.r, m, m, 0, 1000, 100))
+                            break
+                        }
+                        t -= 10
+                        q = T.u(n.r, !0, c)
+                        p = k.length
+                        o = n.r
+                        if (l.aA(l.ak(C.e.Z(q * 0.32 / T.cc(l, !0, c)), o, T.a3(), c, d), o, T.a3(), c, d) > 0)
+                            s = !0
+                        k[p].b = 300
+                    }
+                }
+            }
+        }
+    }
     T.tigerBlastKick.prototype = {
         gb3: function() {
             return 3
@@ -15988,6 +16511,79 @@
             t.a0(s * 1.1, !1, u.r, T.a3(), c, d)
         }
     }
+    T.ironbirdUpgrade.prototype = {
+        ar: function(a, b) {
+            var u
+            u = this.r
+            if (u.allupgraded == true) {
+                return false
+            }
+            return this.aS(a, b)
+        },
+        t: function(a, b, c, d) {
+            var u = this, t = a[0].a, robot, superupgrade = false, count = 0, count1 = 0
+            if (c.m() < 20) {
+                superupgrade = true
+                d.a.push(T.e("[0]使用[超级改造]", u.r, u.r, null, null, 1, 1000, 100))
+            } else {
+                d.a.push(T.e("[0]使用[改造]", u.r, u.r, null, null, 1, 1000, 100))
+            }
+            for (var i = 0; i < u.r.simulated.length; i++) {
+                count = 0
+                robot = u.r.simulated[i]
+                if(robot.maxlevel == true) {
+					count1 += 1
+					continue
+                }
+                if (superupgrade == true) {
+                    for (var o = 0; o < 7; o++) {
+                        robot.u[o] += 20
+                        if (robot.u[o] >= 92) {
+                            robot.u[o] = 92
+                        }
+                        count += robot.u[o]
+                    }
+                    robot.u[7] += 50
+                    if (robot.u[7] >= 500) {
+                        robot.u[7] = 500
+                    }
+                    count += robot.u[7]
+                    if (count == 1144) {
+                        robot.maxlevel = true
+                        count1 += 1
+                    }
+                    robot.E()
+                    robot.fx = robot.u[7]
+                    d.a.push($.v())
+                    d.a.push(T.e("[0]全属性大幅提升", robot, t, null, null, 1, 1000, 100))
+                } else {
+                    for (var o = 0; o < 7; o++) {
+                        robot.u[o] += 10
+                        if (robot.u[o] >= 92) {
+                            robot.u[o] = 92
+                        }
+                        count += robot.u[o]
+                    }
+                    robot.u[7] += 30
+                    if (robot.u[7] >= 500) {
+                        robot.u[7] = 500
+                    }
+                    count += robot.u[o]
+                    if (count == 1144) {
+                        robot.maxlevel = true
+                        count1 += 1
+                    }
+                    robot.E()
+                    robot.fx = robot.u[7]
+                    d.a.push($.v())
+                    d.a.push(T.e("[0]全属性提升", robot, t, null, null, 1, 1000, 100))
+                }
+            }
+            if (count1 == u.r.simulated.length) {
+                u.r.allupgraded = true
+            }
+        }
+    }
     T.tigerMillionPunch.prototype = {
         ga1: function() {
             return 10
@@ -15996,7 +16592,7 @@
             var u = this
               , t = b
               , s = c.m()
-            if ((s & 127) < u.f && b.e != u.r.e || b.e == "dark@!" && b.level == 3 && u.f != 0) {
+            if (((s & 127) < u.f && b.e != u.r.e || b.e == "dark@!" && b.level == 3 && u.f != 0) && !u.r.tigerCurse) {
                 u.r.millionPower = true
                 d.a.pop()
                 //pop "die"
@@ -16748,6 +17344,44 @@
             u.f = 30
             t.push(u)
             u = new T.hellCheckHP()
+            t.push(u)
+        }
+    }
+    T.ironbird.prototype = {
+        gah: function() {
+            return C.ironbird
+        },
+        gaQ: function() {
+            return H.a(["berserk", "charm", "ice", "poison", "curse", "fire", "disperse", "half", "exchange", "assassinate"], [P.f])
+        },
+        aa: function() {
+            var u, t = new T.aK(), f
+            t.r = this
+            this.k2 = t
+            t = this.id
+            u = new T.ironbirdLaser()
+            u.f = 30
+            t.push(u)
+            u = new T.ironbirdSimulate()
+            u.f = 100
+            t.push(u)
+            t.push(new T.ironbirdCheckHP())
+            u = new T.ironbirdForceShield()
+            f = new T.dF(1 / 0,u)
+            u.fr = f
+            u.fx = new T.ay(u)
+            u.fy = new T.aN(u)
+            f.r = 10
+            u.f = 50
+            t.push(u)
+            u = new T.ironbirdUpgrade()
+            u.f = 0
+            t.push(u)
+            u = new T.ironbirdRepair()
+            u.f = 0
+            t.push(u)
+            u = new T.dX()
+            u.f = 96
             t.push(u)
         }
     }
@@ -18994,16 +19628,16 @@
         },
         aX: function(a, b, c, d) {
             var u, t = this, s = c.m(), r = t.f
-            if(d.a[d.a.length - 3].d != "[1]被击倒了") {
-				u = d.a
-				u.splice(2, 0, $.v())
+            if (d.a[d.a.length - 3].d != "[1]被击倒了") {
+                u = d.a
+                u.splice(2, 0, $.v())
                 s = "[0]: 弟，大哥只能助你至此。…以后的便要靠你自己。…"
                 r = t.r
-                u.splice(3, 0, T.e(s, r, r, null, null, 80, 1500, 1000))
+                u.splice(3, 0, T.e(s, r, r, null, null, 80, 1500, 5000))
                 u.splice(4, 0, $.v())
                 r = "[0]: 保重。"
                 s = t.r
-                u.splice(5, 0, T.e(r, s, s, null, null, 80, 1500, 1000))
+                u.splice(5, 0, T.e(r, s, s, null, null, 80, 1500, 5000))
                 u.splice(6, 0, $.v())
                 return !0
             }
@@ -20056,14 +20690,14 @@
         t(Z.hl, Z.ax)
         s(F.ab, [T.H, T.M, T.D, T.J, T.L, T.K, T.A, T.G, T.C, T.I])
         s(T.H, [T.y, T.hJ, T.hR, T.i0, T.i3, T.dU, T.dZ, T.bU, T.dQ, T.hZ, T.i5, T.dV, T.dX, T.i9, T.ih, T.im, T.io, T.tigerMillionPunch, T.darkRevive, T.hellDefend, T.hellTaichiReflect, T.wargodSay])
-        s(T.y, [T.dL, T.hI, T.hK, T.bx, T.hL, T.hM, T.dN, T.dO, T.dP, T.hS, T.hU, T.hV, T.bV, T.dR, T.hX, T.dS, T.dT, T.i1, T.i6, T.i8, T.dW, T.ia, T.i7, T.ig, T.ij, T.hW, T.ik, T.il, T.dM, T.hO, T.dc, T.hQ, T.i_, T.bI, T.i2, T.i4, T.ie, T.aK, T.bm, T.bn, T.hT, T.dY, T.ic, T.tigerAttack, T.tigerCheckHP, T.tigerIceAttack, T.tigerBlastPunch, T.tigerBlade, T.tigerRecover, T.tigerFastPunch, T.tigerWindAttack, T.tigerBlastKick, T.darkRecover, T.darkFastAttack, T.darkIron, T.darkHaste, T.darkLock, T.darkDemonSword, T.darkAttack, T.hellFireAttack, T.hellWindAttack, T.hellCutter, T.hellBehead, T.hellCheckHP, T.hellWargod, T.hellAttack, T.hellSword, T.hellHeartbreakSword, T.hellEclipseSword, T.wargodSweepAttack, T.wargodCritical, T.wargodAttack])
-        s(T.M, [T.bf, T.co, T.dj, T.cG, T.aN, T.hz, T.darkHasteRun, T.darkSuperUpgrade])
+        s(T.y, [T.dL, T.hI, T.hK, T.bx, T.hL, T.hM, T.dN, T.dO, T.dP, T.hS, T.hU, T.hV, T.bV, T.dR, T.hX, T.dS, T.dT, T.i1, T.i6, T.i8, T.dW, T.ia, T.i7, T.ig, T.ij, T.hW, T.ik, T.il, T.dM, T.hO, T.dc, T.hQ, T.i_, T.bI, T.i2, T.i4, T.ie, T.aK, T.bm, T.bn, T.hT, T.dY, T.ic, T.tigerAttack, T.tigerCheckHP, T.tigerIceAttack, T.tigerBlastPunch, T.tigerBlade, T.tigerRecover, T.tigerFastPunch, T.tigerWindAttack, T.tigerBlastKick, T.darkRecover, T.darkFastAttack, T.darkIron, T.darkHaste, T.darkLock, T.darkDemonSword, T.darkAttack, T.hellFireAttack, T.hellWindAttack, T.hellCutter, T.hellBehead, T.hellCheckHP, T.hellWargod, T.hellAttack, T.hellSword, T.hellHeartbreakSword, T.hellEclipseSword, T.wargodSweepAttack, T.wargodCritical, T.wargodAttack, T.ironbirdLaser, T.ironbirdCheckHP, T.ironbirdSimulate, T.ironbirdForceShield, T.robotForceShield, T.ironbirdUpgrade, T.ironbirdRepair])
+        s(T.M, [T.bf, T.co, T.dj, T.cG, T.aN, T.hz, T.darkHasteRun, T.darkSuperUpgrade, T.ironbirdSimulateRun])
         s(T.p, [T.dt, T.aQ, T.ii, T.h0, T.iT])
         s(T.w, [T.dC, T.av, T.cA, T.hc, T.hj, T.hk, T.he, T.cy])
         s(T.D, [T.cg, T.dF, T.el])
         s(T.J, [T.dE, T.ay])
         s(T.av, [T.hh, T.hi, T.ho, T.wargod])
-        s(T.cA, [T.eY, T.eZ, T.f_, T.f0, T.d7, T.d8, T.f1, T.f2, T.bA, T.f4, T.f6, T.tigershark, T.dark, T.hell, T.yuri2])
+        s(T.cA, [T.eY, T.eZ, T.f_, T.f0, T.d7, T.d8, T.f1, T.f2, T.bA, T.f4, T.f6, T.tigershark, T.dark, T.hell, T.yuri2, T.ironbird])
         t(T.hg, T.cy)
         t(T.f3, T.bA)
         t(T.e_, T.dN, T.yuriSuperControl)
@@ -20419,6 +21053,7 @@
         C.tigershark = H.a(u([62, 49, 89, 86, 77, 76, 30, 120]), [P.j])
         C.dark = H.a(u([42, 69, 59, 66, 67, 68, 40, 120]), [P.j])
         C.hell = H.a(u([20, 20, 60, 50, 20, 20, 90, 120]), [P.j])
+        C.ironbird = H.a(u([21, 5, 16, 49, 4, 20, 42, 267]), [P.j])
         C.V = H.a(u(["*::class", "*::dir", "*::draggable", "*::hidden", "*::id", "*::inert", "*::itemprop", "*::itemref", "*::itemscope", "*::lang", "*::spellcheck", "*::title", "*::translate", "A::accesskey", "A::coords", "A::hreflang", "A::name", "A::shape", "A::tabindex", "A::target", "A::type", "AREA::accesskey", "AREA::alt", "AREA::coords", "AREA::nohref", "AREA::shape", "AREA::tabindex", "AREA::target", "AUDIO::controls", "AUDIO::loop", "AUDIO::mediagroup", "AUDIO::muted", "AUDIO::preload", "BDO::dir", "BODY::alink", "BODY::bgcolor", "BODY::link", "BODY::text", "BODY::vlink", "BR::clear", "BUTTON::accesskey", "BUTTON::disabled", "BUTTON::name", "BUTTON::tabindex", "BUTTON::type", "BUTTON::value", "CANVAS::height", "CANVAS::width", "CAPTION::align", "COL::align", "COL::char", "COL::charoff", "COL::span", "COL::valign", "COL::width", "COLGROUP::align", "COLGROUP::char", "COLGROUP::charoff", "COLGROUP::span", "COLGROUP::valign", "COLGROUP::width", "COMMAND::checked", "COMMAND::command", "COMMAND::disabled", "COMMAND::label", "COMMAND::radiogroup", "COMMAND::type", "DATA::value", "DEL::datetime", "DETAILS::open", "DIR::compact", "DIV::align", "DL::compact", "FIELDSET::disabled", "FONT::color", "FONT::face", "FONT::size", "FORM::accept", "FORM::autocomplete", "FORM::enctype", "FORM::method", "FORM::name", "FORM::novalidate", "FORM::target", "FRAME::name", "H1::align", "H2::align", "H3::align", "H4::align", "H5::align", "H6::align", "HR::align", "HR::noshade", "HR::size", "HR::width", "HTML::version", "IFRAME::align", "IFRAME::frameborder", "IFRAME::height", "IFRAME::marginheight", "IFRAME::marginwidth", "IFRAME::width", "IMG::align", "IMG::alt", "IMG::border", "IMG::height", "IMG::hspace", "IMG::ismap", "IMG::name", "IMG::usemap", "IMG::vspace", "IMG::width", "INPUT::accept", "INPUT::accesskey", "INPUT::align", "INPUT::alt", "INPUT::autocomplete", "INPUT::autofocus", "INPUT::checked", "INPUT::disabled", "INPUT::inputmode", "INPUT::ismap", "INPUT::list", "INPUT::max", "INPUT::maxlength", "INPUT::min", "INPUT::multiple", "INPUT::name", "INPUT::placeholder", "INPUT::readonly", "INPUT::required", "INPUT::size", "INPUT::step", "INPUT::tabindex", "INPUT::type", "INPUT::usemap", "INPUT::value", "INS::datetime", "KEYGEN::disabled", "KEYGEN::keytype", "KEYGEN::name", "LABEL::accesskey", "LABEL::for", "LEGEND::accesskey", "LEGEND::align", "LI::type", "LI::value", "LINK::sizes", "MAP::name", "MENU::compact", "MENU::label", "MENU::type", "METER::high", "METER::low", "METER::max", "METER::min", "METER::value", "OBJECT::typemustmatch", "OL::compact", "OL::reversed", "OL::start", "OL::type", "OPTGROUP::disabled", "OPTGROUP::label", "OPTION::disabled", "OPTION::label", "OPTION::selected", "OPTION::value", "OUTPUT::for", "OUTPUT::name", "P::align", "PRE::width", "PROGRESS::max", "PROGRESS::min", "PROGRESS::value", "SELECT::autocomplete", "SELECT::disabled", "SELECT::multiple", "SELECT::name", "SELECT::required", "SELECT::size", "SELECT::tabindex", "SOURCE::type", "TABLE::align", "TABLE::bgcolor", "TABLE::border", "TABLE::cellpadding", "TABLE::cellspacing", "TABLE::frame", "TABLE::rules", "TABLE::summary", "TABLE::width", "TBODY::align", "TBODY::char", "TBODY::charoff", "TBODY::valign", "TD::abbr", "TD::align", "TD::axis", "TD::bgcolor", "TD::char", "TD::charoff", "TD::colspan", "TD::headers", "TD::height", "TD::nowrap", "TD::rowspan", "TD::scope", "TD::valign", "TD::width", "TEXTAREA::accesskey", "TEXTAREA::autocomplete", "TEXTAREA::cols", "TEXTAREA::disabled", "TEXTAREA::inputmode", "TEXTAREA::name", "TEXTAREA::placeholder", "TEXTAREA::readonly", "TEXTAREA::required", "TEXTAREA::rows", "TEXTAREA::tabindex", "TEXTAREA::wrap", "TFOOT::align", "TFOOT::char", "TFOOT::charoff", "TFOOT::valign", "TH::abbr", "TH::align", "TH::axis", "TH::bgcolor", "TH::char", "TH::charoff", "TH::colspan", "TH::headers", "TH::height", "TH::nowrap", "TH::rowspan", "TH::scope", "TH::valign", "TH::width", "THEAD::align", "THEAD::char", "THEAD::charoff", "THEAD::valign", "TR::align", "TR::bgcolor", "TR::char", "TR::charoff", "TR::valign", "TRACK::default", "TRACK::kind", "TRACK::label", "TRACK::srclang", "UL::compact", "UL::type", "VIDEO::controls", "VIDEO::height", "VIDEO::loop", "VIDEO::mediagroup", "VIDEO::muted", "VIDEO::preload", "VIDEO::width"]), [P.f])
         C.W = H.a(u([10, -6, 1000, 0, 10, -15, 6, 0]), [P.j])
         C.X = H.a(u(["", "", "", "", "", "", "", "", "", ""]), [P.f])
@@ -20461,7 +21096,7 @@
         $.ac = P.cs(P.f, Z.ax)
         $.or = function() {
             var u = P.f
-            return P.dq(["tigershark", "R0lGODlhEAAQAJEAAP8AAP///wAAAP///yH5BAEAAAMALAAAAAAQABAAAAI9nCepeS0AIxQNyQuoeSBgn1lQAI5lEpGSOnHjKqEgS2dPOad2l3fmTgoKg8ChccczsigcJUgjwkwqiyq0AAA7", "hell", "R0lGODlhEAAQAJEAAHb9/wAAAP///wAAACH5BAEAAAIALAAAAAAQABAAAAIslB2px5IAY2ov2omC3QBrvgUOCFbk9Z1SqnasarbiW2awaJf4EUNY41D8DAUAOw==", "dark", "R0lGODlhEAAQALMAAPr6+wQEAf7+/QwKAhEQDf38+xEODP79/f////z8/Pn5+QAAAP///wAAAAAAAAAAACH5BAEAAAwALAAAAAAQABAAAARIkEm5qp2YjYW6rxn3Wd0yiYhVGUFJlWpFcCZKpncFo7io9x3ADecpqkYdwY5HRAgSMV4NUTgUryaGbeii+EgKEOZnzGa0sUwEADs=", "yurix", "R0lGODlhEAAQAKEDAAAAAN4H28asxv///yH5BAEKAAMALAAAAAAQABAAAAI+hI85EB3s4DNBiFcvs3NjvmlL9WkesEDnKI7fw8Lpi6roMJ42jh8NNeEJVb+bsFc0HIfB5ZFhdPIO0mf0WAAAOw==", "aokiji", "R0lGODlhEAAQAMIDAAAAAEB2/4Kl/////////////////////yH5BAEKAAQALAAAAAAQABAAAANISLrQsJC1MVwkLgSqLW6bQFFi4ACjIGxDoI7gqHFsO9UsXgFuPXIr0Or3691kHGSMxuRMSMPWi3IK/UqeTM7UuDio3YskDEkAADs=", "conan", "R0lGODlhEAAQAMIAAAAAANAYISpXyf///wAAAAAAAAAAAAAAACH5BAEKAAQALAAAAAAQABAAAANISATczkqBQasFcQlrBV6MsHGiEzQj5TEnELzM5cIsbdLLC+/6N/O/E6j3IP5ilVqrBUgNVi6HyDltSJoiVekTCU23me4DEkkAADs=", "covid", "R0lGODlhEAAQAIIAMf/GAOpK/f///wAAAP///wAAAAAAAAAAACH5BAEAAAQALAAAAAAQABAAAgNKSLrTvZC4AeqIqgEttoNU1wSOx1BBmoabNJGDGpjURlqBAJf6ba+WWgwmy3kcRYFO6AKolMuJBCAqmjIUJKd12moemNrxgnF9IgkAOw==", "ikaruga", "R0lGODlhEAAQAMIEAAAAAAcHB7MABFuV/////////////////yH5BAEKAAcALAAAAAAQABAAAANKeLrRsZA1Qlw8jmoCGgzaMAiC9iiTOFBk6WGUypLUk4pbW00EvhG0XWz1C2Z8o9kO1uuNSqUKCqR60l5MZ1AqAf0skczudJliFwkAOw==", "lazy", "R0lGODlhEAAQAMICAAAAAAgICP+3t/////+3t/+3t/+3t/+3tyH5BAEKAAQALAAAAAAQABAAAANPSLpM8K9JMCqQDoIwwp3VQG1fBnFeWFKW6GnL1rFi87raSQQcvXEhHkeQGwqOncBxKeAxj07io6kkQZXPKJM3YCa7yySwIhwnd5qAokhIAAA7", "mario", "R0lGODlhEAAQAIEAMQAAANgoAPz8/AAAACH5BAEAAAAALAAAAAAQABAAAQJBhD2px6AhRFgshRvvHCdJGH1CgoDhKXEWqLHboH2tvEItpq3ZvXvnfPIphooI0YgcLXyjpLKDQnE6g6hxSiVSAAUAOw==", "mosquito", "R0lGODlhEAAQAKECAAAAAP8AAP///////yH5BAEKAAMALAAAAAAQABAAAAJB3ICpaCnxRIRKoAkpsJu/AHpch4DgxR0kcK6GKrGB+zrylrzH2OL62or9SKcYYIgr5mq82eXI5AQtw1gxhVwwDAUAOw==", "saitama", "R0lGODlhEAAQAMIGAAAAAAgICGxsbP/AmP/PV/////jIUfjIUSH5BAEKAAcALAAAAAAQABAAAANKeLrRsZC1MVw8juraYNhUIVYSGIodZprPtG7ZC8YyFxSC8OZFAIi4nJAnAhgLx2DxZwQQCMZn7hmFOp/YKZZa3Xqth6bR1xADDgkAOw==", "seed", "R0lGODlhEAAQAMIDAAAAAG9tbUCy5////////////////////yH5BAEKAAQALAAAAAAQABAAAANFSLrQsJC1MVwkjuraVN6gA4CDIJCNSW5BkJon2LZpAMdzMLiAYN85HQ/28wWHpmJrN3sRjUya4xm0YJzNTmTKe1wkWkgCADs=", "slime", "R0lGODlhEAAQAMIEAAABAFaSRV6qSLn9qgAAAAAAAAAAAAAAACH5BAEKAAQALAAAAAAQABAAAANCSKrQvpA4QcWDrWoLsB5bxwDVYApB2jClaaaqRMIuCk92CuYBR8G9DSUjLBI3wMpRQzvhis4OqVUbjopKkczBvSQAADs=", "sonic", "R0lGODlhEAAQAMIDAAgICOgSJh9O/////////////////////yH5BAEKAAQALAAAAAAQABAAAANBSLrQsJA1IVwkjuraINDDsFUSFYZbh5knqj2T0LpUBp4jN9JpnJuc1S8UIGE+uUBRJRQonzXP5LlkSpCWy/URSQAAOw==", "yuri", "R0lGODlhEAAQAKEDAAAAAN4H28asxv///yH5BAEKAAMALAAAAAAQABAAAAI+hI85EB3s4DNBiFcvs3NjvmlL9WkesEDnKI7fw8Lpi6roMJ42jh8NNeEJVb+bsFc0HIfB5ZFhdPIO0mf0WAAAOw=="], u, u)
+            return P.dq(["tigershark", "R0lGODlhEAAQAJEAAP8AAP///wAAAP///yH5BAEAAAMALAAAAAAQABAAAAI9nCepeS0AIxQNyQuoeSBgn1lQAI5lEpGSOnHjKqEgS2dPOad2l3fmTgoKg8ChccczsigcJUgjwkwqiyq0AAA7", "hell", "R0lGODlhEAAQAJEAAHb9/wAAAP///wAAACH5BAEAAAIALAAAAAAQABAAAAIslB2px5IAY2ov2omC3QBrvgUOCFbk9Z1SqnasarbiW2awaJf4EUNY41D8DAUAOw==", "dark", "R0lGODlhEAAQALMAAPr6+wQEAf7+/QwKAhEQDf38+xEODP79/f////z8/Pn5+QAAAP///wAAAAAAAAAAACH5BAEAAAwALAAAAAAQABAAAARIkEm5qp2YjYW6rxn3Wd0yiYhVGUFJlWpFcCZKpncFo7io9x3ADecpqkYdwY5HRAgSMV4NUTgUryaGbeii+EgKEOZnzGa0sUwEADs=", "yurix", "R0lGODlhEAAQAKEDAAAAAN4H28asxv///yH5BAEKAAMALAAAAAAQABAAAAI+hI85EB3s4DNBiFcvs3NjvmlL9WkesEDnKI7fw8Lpi6roMJ42jh8NNeEJVb+bsFc0HIfB5ZFhdPIO0mf0WAAAOw==", "ironbird", "R0lGODlhEAAQAKIAAGfh/ywtLf8AAP///wAAAAAAAAAAAAAAACwAAAAAEAAQAAADOzhK3K6QATKpJVHeWbHm3xVWYOecKBMEgrCu7erA7hsHjZluQO//Pglw2BMSgblj0ENRMjLHJ2Swkw4SADs=", "aokiji", "R0lGODlhEAAQAMIDAAAAAEB2/4Kl/////////////////////yH5BAEKAAQALAAAAAAQABAAAANISLrQsJC1MVwkLgSqLW6bQFFi4ACjIGxDoI7gqHFsO9UsXgFuPXIr0Or3691kHGSMxuRMSMPWi3IK/UqeTM7UuDio3YskDEkAADs=", "conan", "R0lGODlhEAAQAMIAAAAAANAYISpXyf///wAAAAAAAAAAAAAAACH5BAEKAAQALAAAAAAQABAAAANISATczkqBQasFcQlrBV6MsHGiEzQj5TEnELzM5cIsbdLLC+/6N/O/E6j3IP5ilVqrBUgNVi6HyDltSJoiVekTCU23me4DEkkAADs=", "covid", "R0lGODlhEAAQAIIAMf/GAOpK/f///wAAAP///wAAAAAAAAAAACH5BAEAAAQALAAAAAAQABAAAgNKSLrTvZC4AeqIqgEttoNU1wSOx1BBmoabNJGDGpjURlqBAJf6ba+WWgwmy3kcRYFO6AKolMuJBCAqmjIUJKd12moemNrxgnF9IgkAOw==", "ikaruga", "R0lGODlhEAAQAMIEAAAAAAcHB7MABFuV/////////////////yH5BAEKAAcALAAAAAAQABAAAANKeLrRsZA1Qlw8jmoCGgzaMAiC9iiTOFBk6WGUypLUk4pbW00EvhG0XWz1C2Z8o9kO1uuNSqUKCqR60l5MZ1AqAf0skczudJliFwkAOw==", "lazy", "R0lGODlhEAAQAMICAAAAAAgICP+3t/////+3t/+3t/+3t/+3tyH5BAEKAAQALAAAAAAQABAAAANPSLpM8K9JMCqQDoIwwp3VQG1fBnFeWFKW6GnL1rFi87raSQQcvXEhHkeQGwqOncBxKeAxj07io6kkQZXPKJM3YCa7yySwIhwnd5qAokhIAAA7", "mario", "R0lGODlhEAAQAIEAMQAAANgoAPz8/AAAACH5BAEAAAAALAAAAAAQABAAAQJBhD2px6AhRFgshRvvHCdJGH1CgoDhKXEWqLHboH2tvEItpq3ZvXvnfPIphooI0YgcLXyjpLKDQnE6g6hxSiVSAAUAOw==", "mosquito", "R0lGODlhEAAQAKECAAAAAP8AAP///////yH5BAEKAAMALAAAAAAQABAAAAJB3ICpaCnxRIRKoAkpsJu/AHpch4DgxR0kcK6GKrGB+zrylrzH2OL62or9SKcYYIgr5mq82eXI5AQtw1gxhVwwDAUAOw==", "saitama", "R0lGODlhEAAQAMIGAAAAAAgICGxsbP/AmP/PV/////jIUfjIUSH5BAEKAAcALAAAAAAQABAAAANKeLrRsZC1MVw8juraYNhUIVYSGIodZprPtG7ZC8YyFxSC8OZFAIi4nJAnAhgLx2DxZwQQCMZn7hmFOp/YKZZa3Xqth6bR1xADDgkAOw==", "seed", "R0lGODlhEAAQAMIDAAAAAG9tbUCy5////////////////////yH5BAEKAAQALAAAAAAQABAAAANFSLrQsJC1MVwkjuraVN6gA4CDIJCNSW5BkJon2LZpAMdzMLiAYN85HQ/28wWHpmJrN3sRjUya4xm0YJzNTmTKe1wkWkgCADs=", "slime", "R0lGODlhEAAQAMIEAAABAFaSRV6qSLn9qgAAAAAAAAAAAAAAACH5BAEKAAQALAAAAAAQABAAAANCSKrQvpA4QcWDrWoLsB5bxwDVYApB2jClaaaqRMIuCk92CuYBR8G9DSUjLBI3wMpRQzvhis4OqVUbjopKkczBvSQAADs=", "sonic", "R0lGODlhEAAQAMIDAAgICOgSJh9O/////////////////////yH5BAEKAAQALAAAAAAQABAAAANBSLrQsJA1IVwkjuraINDDsFUSFYZbh5knqj2T0LpUBp4jN9JpnJuc1S8UIGE+uUBRJRQonzXP5LlkSpCWy/URSQAAOw==", "yuri", "R0lGODlhEAAQAKEDAAAAAN4H28asxv///yH5BAEKAAMALAAAAAAQABAAAAI+hI85EB3s4DNBiFcvs3NjvmlL9WkesEDnKI7fw8Lpi6roMJ42jh8NNeEJVb+bsFc0HIfB5ZFhdPIO0mf0WAAAOw=="], u, u)
         }()
         $.kG = function() {
             var u = P.f
