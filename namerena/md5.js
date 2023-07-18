@@ -14637,7 +14637,7 @@
                     }
                     r.k1 = r.U.dz(r.id, T.H)
                     for (var i = 0; i < r.k1.length; i++) {
-                        if (r.k1[i].f > 0 && r.k1[i]instanceof T.y) {
+                        if (r.k1[i]instanceof T.y) {
                             r.k3.push(r.k1[i])
                         }
                     }
@@ -14916,6 +14916,15 @@
             return a.b1(this.r.simulated)
         },
         am: function(a, b) {
+			var u = 0
+			for(var i = 0; i < this.r.simulated.length; i++) {
+				if(this.r.simulated[i].tigerCurse) {
+					u += this.r.simulated[i].tigerCurse
+				}
+			}
+			if(u == this.r.simulated.length) {
+				return false
+			}
             if (b)
                 return a.fr + 80 < a.fx
             return a.fr < a.fx
@@ -16089,7 +16098,7 @@
     }
     T.ironbirdCheckHP.prototype = {
         ak: function(a, b, c, d, e) {
-            if (this.r.shield <= 0) {
+            if (this.r.shield <= 0 || b.millionPower) {
                 this.r.shield = 0
                 return -(this.r.shield - a)
             } else {
@@ -16104,7 +16113,7 @@
     }
     T.robotForceShield.prototype = {
         ak: function(a, b, c, d, e) {
-            if (this.r.owner.shieldholding != true) {
+            if (this.r.owner.shieldholding != true || b.millionPower) {
                 return a
             }
             return 0
@@ -16636,6 +16645,9 @@
                 d.a.push($.v())
                 if (t.$iav && t.a5) {
                     t = t.a5.x
+                }
+                if(t.af) {
+					t = t.af.r
                 }
                 s = T.u(u.r, !1, c) * 20
                 t.a0(s, !1, u.r, T.a3(), c, d)
@@ -19305,7 +19317,7 @@
             return 2000
         },
         ak: function(a, b, c, d, e) {
-            if (d.m() < this.f && this.r.bq(d)) {
+            if (d.m() < this.f && this.r.bq(d) && !b.millionPower) {
                 e.a.push(T.e(O.c("zGKr"), this.r, b, null, null, 40, 1000, 100))
                 if (this.r.wargod != null) {
                     this.r.wargod.j = 2048
